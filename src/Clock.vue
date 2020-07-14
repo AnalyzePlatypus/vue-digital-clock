@@ -42,6 +42,7 @@ const getHour = twelveHour => {
   let hours = getDate().getHours();
   if (twelveHour && hours > 12) {
     hours = hours - 12;
+    return hours;
   }
   return padZero(hours);
 };
